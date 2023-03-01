@@ -1,0 +1,17 @@
+{
+  "name": "http-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js --port=8080",
+    "cy:run": "cypress run",
+    "test": "npm start & wait-on http://localhost:8080 & npm run cy:run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harshil-R/wd201.git"
+  },
+  "author": "Harshil",
+  "license": "ISC"
+}
